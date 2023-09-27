@@ -4,11 +4,12 @@ import SignUp from './auth/SignUp';
 import Login from './auth/Login'; 
 import ForgotPass from './auth/ForgotPass';
 import ChangePass from './auth/ChangePass';
+import Jobs from  './auth/Jobs';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ChangePass /> {}
+      <Jobs /> {}
     </View>
   );
 }
@@ -21,3 +22,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
